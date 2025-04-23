@@ -1,54 +1,111 @@
-# React + TypeScript + Vite
+# Stefan Neubauer – Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, animated personal developer website built with a focus on aesthetic visuals, smooth UX, and multilingual support.  
+Features a glowing UI, animated canvas effects, and deep integration of i18n, Framer Motion, TailwindCSS, and TypeScript.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **React** + **Vite**
+- **TypeScript**
+- **TailwindCSS**
+- **Framer Motion**
+- **i18next**
+- **React Parallax Tilt**
+- **React Icons**
+- Custom UI Components (GlowCard, Tooltip, HeroCanvas, etc.)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📁 Project Structure
+
+```bash
+src/
+├── assets/                # Static images (e.g. 3D models, logos, backgrounds)
+├── components/
+│   ├── ui/                # Reusable UI components (buttons, cards, dividers, etc.)
+│   ├── utility/           # Reusable logic-based components (e.g. Typewriter, AnimatedCanvas)
+│   
+├── sections/              # Full-page components like Hero, AboutMe, Projects, Learning
+├── App.tsx                # Main layout and routing
+├── i18n.ts                # Language setup (en/de)
+└── main.tsx               # Entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🌍 Features
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+- 🌐 **Multilingual** (🇩🇪 Deutsch & 🇺🇸 English)
+- 🎨 **Custom Glow UI** components with animated dividers
+- 🔤 **Typewriter intro**
+- 💻 **Project Cards** with technology icons and GitHub links
+- 🧠 **Learning section** with responsive design
+- ✨ **Animated Canvas background** (mouse + touch interaction)
+- 📄 **CV Download button**
+- 📱 Fully **responsive** with mobile-optimized sections
+
+---
+
+## 🔧 Getting Started
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/YOUR_USERNAME/personal-site.git
+cd personal-site
 ```
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Run the dev server**
+
+```bash
+npm run dev
+```
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 📝 Customization
+
+- 🌐 **Languages**: Edit translations in `i18n.ts`
+- 📄 **CV File**: Replace `assets/Neubauer_CV.pdf` with your own
+- 🧠 **Projects Section**: Modify in `sections/ProjectsSection.tsx`
+- ✏️ **Text Sections**: Editable in `AboutMeSection.tsx`, `HeroSection.tsx`, etc.
+
+---
+
+## 🧪 Deployment
+
+Can be deployed on:
+- [Netlify](https://netlify.com)
+- [Vercel](https://vercel.com)
+- [GitHub Pages](https://pages.github.com)
+
+---
+
+## 👨‍💻 Author
+
+**Stefan Neubauer**  
+📧 [stefan04.neubauer@gmail.com](mailto:stefan04.neubauer@gmail.com)  
+📍 Wels, Austria  
+🌐 [GitHub Profile](https://github.com/NeubauerSte)
+
+---
+
+## 📄 License
+
+MIT License – feel free to use and modify for personal or commercial use.
