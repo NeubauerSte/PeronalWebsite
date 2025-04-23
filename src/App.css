@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+    --color-bg: #ffffff;
+    --color-bg-transparent: rgba(255, 255, 255, 0.125);
+    --color-accent: #88E6E3;
+    --color-accent-dark: #0d0e49;
+    --color-text-main: #121212;
+    --color-text-light-bg: #191040;
+    --color-text-dark-bg: #9383ff;
+
+    --font-heading: "Anton", sans-serif;
+    --font-future: "San Grotesk", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+}
+@layer components {
+    .nav-item {
+        @apply relative inline-block px-3 py-1 transition font-future text-[var(--color-accent-dark)];
+    }
+
+    .nav-item::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 9999px;
+        opacity: 0;
+        background-color: color-mix(in srgb, var(--color-accent) 20%, transparent);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-item:hover::after {
+        opacity: 1;
+        animation: pulseGlow 1.8s infinite ease-in-out;
+        filter: blur(1rem);
+    }
+}
+
+@layer utilities {
+    @keyframes pulseGlow {
+        0%, 100% {
+            box-shadow: 0 0 0px var(--color-accent);
+        }
+        50% {
+            box-shadow: 0 0 12px var(--color-accent);
+        }
+    }
+
+    @keyframes shimmer {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(200%);
+        }
+    }
+
+    .animate-shimmer {
+        animation: shimmer 3s infinite;
+    }
+}
+
+html,
+body {
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
