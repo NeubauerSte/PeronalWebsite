@@ -42,7 +42,7 @@
 @layer utilities {
     @keyframes pulseGlow {
         0%, 100% {
-            box-shadow: 0 0 0px var(--color-accent);
+            box-shadow: 0 0 0 var(--color-accent);
         }
         50% {
             box-shadow: 0 0 12px var(--color-accent);
