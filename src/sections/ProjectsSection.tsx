@@ -34,7 +34,7 @@ export default function ProjectsSection() {
     const githubLinks = [
         "https://github.com/your-profile/portfolio-site",
         "https://github.com/NeubauerSte/todoapp",
-        "https://github.com/your-profile/smartcamera"
+        "https://github.com/NeubauerSte/SmartCamera"
     ]
 
     return (
