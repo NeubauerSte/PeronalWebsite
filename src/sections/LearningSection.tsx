@@ -88,7 +88,7 @@ export default function LearningSection() {
             {/* Mobile Layout */}
             <GlowBox className="md:hidden">
                 <div className="relative z-10 max-w-2xl mx-auto flex flex-col gap-12 px-4 py-3">
-                    {/* Lernen TO-DO */}
+                    {/* Left Column Mobile */}
                     <div>
                         <Headline
                             className="text-white text-3xl mb-6"
@@ -131,7 +131,7 @@ export default function LearningSection() {
                         </div>
                     </div>
 
-                    {/* Projekte TO-DO */}
+                    {/* Right Column Mobile */}
                     <div>
                         <Headline
                             className="text-white text-3xl mb-6"
@@ -156,16 +156,17 @@ export default function LearningSection() {
             </GlowBox>
 
 
+            {/* Desktop Divider Positioning */}
             <div className="relative w-full hidden md:block">
-                {/* Horizontal unter Headlines */}
+
                 <TurquoiseDivider className="w-full max-w-7xl mx-auto -translate-y-[25vh]" />
 
-                {/* Vertikaler Mittelstrich */}
+
                 <TurquoiseDivider
                     className="w-1/4 rotate-90 -translate-y-[9vh] mx-auto"
                 />
 
-                {/* Abschlusslinie unten */}
+
                 <TurquoiseDivider className="w-full max-w-7xl mx-auto mt-16" />
             </div>
 
