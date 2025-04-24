@@ -32,7 +32,7 @@ export default function ProjectsSection() {
     ]
 
     const githubLinks = [
-        "https://github.com/your-profile/portfolio-site",
+        "https://github.com/NeubauerSte/PeronalWebsite",
         "https://github.com/NeubauerSte/todoapp",
         "https://github.com/NeubauerSte/SmartCamera"
     ]
