@@ -19,10 +19,10 @@ export default function BelowHeroSection() {
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
                     backgroundBlendMode: "overlay",
-                    backgroundColor: "rgba(0, 0, 0, 0.1)",
+                    backgroundColor: "rgba(0, 0, 0, 0.25)",
                 }}
             >
-                <FlashDivider className="origin-top md:-translate-y-3 -translate-y-1.5 scale-y-120 md:scale-y-60 brightness-100 opacity-90 contrast-120" />
+                <FlashDivider className="origin-top md:-translate-y-7.5 -translate-y-3.5 scale-y-300 md:scale-y-150 brightness-80 opacity-100 contrast-200" />
 
                 <AboutMeSection />
                 <ProjectsSection />
